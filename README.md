@@ -1,4 +1,4 @@
 ```sh
-pnpm i
-npx tsc --noEmit
+bun i
+bun run test.ts
 ```
