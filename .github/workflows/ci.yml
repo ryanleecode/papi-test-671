@@ -17,10 +17,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          export BUN_INSTALL="$HOME/.bun"
-          export PATH="$BUN_INSTALL/bin:$PATH"
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
       - name: Run script with Bun
         run: |
